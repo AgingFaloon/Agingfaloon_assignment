@@ -9,9 +9,9 @@
 * 使用 `find` 和 `grep` 命令找出关键文件
 
 ```bash
-  find . -name "\\\*signal-A\\\*"
-  find . -name "\\\*signal-B\\\*"
-  grep -r "ACCESS\\\_KEY=" .
+  find . -name "*signal-A*"
+  find . -name "*signal-B*"
+  grep -r "ACCESS_KEY=" .
   ```
 
 * 确定了A段和B段的位置以及ACCESS\_KEY=STAR
@@ -26,7 +26,7 @@
 ```bash
   cp /workspace/archive/2026/signal-A.bin /workspace/input
   /workspace/exam -e STAR
-  mv /workspace/output /workspace/A\\\_result
+  mv /workspace/output /workspace/A_result
   ```
 
 * 处理 B 段
@@ -34,13 +34,13 @@
 ```bash
   cp /workspace/inbox/signal-B.bin /workspace/input
   /workspace/exam -e STAR
-  mv /workspace/output /workspace/B\\\_result
+  mv /workspace/output /workspace/B_result
   ```
 
 * 按照 A段在前、B段在后的顺序拼接
 
 ```bash
-  cat /workspace/A\\\_result /workspace/B\\\_result > /workspace/flag
+  cat /workspace/A_result /workspace/B_result > /workspace/flag
   ```
 
 * 检查文件大小，保证不超过 1 MiB
@@ -52,7 +52,7 @@
 * 验证 flag 字节内容等于 A 段处理结果与 B 段处理结果的有序拼接
 
 ```bash
-  wc -c /workspace/A\\\_result /workspace/B\\\_result /workspace/flag
+  wc -c /workspace/A_result /workspace/B_result /workspace/flag
   ```
 
 * 最后提交文件
