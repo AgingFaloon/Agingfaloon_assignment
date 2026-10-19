@@ -56,11 +56,11 @@
 
 | 题目 | 提交文件 | 实现要点 |                                                                                            
 | --- | --- | --- | --- |                                                                            
-| 读数统计 | `main.cpp` | 一次扫描求 count/sum/min/max |
-| 设备巡检记录 | `main.cpp` | 结构体聚合 + 类型索引 + 最忙设备 |
-| 固定容量读数窗口 | `main.cpp` | 环形窗口 `read % 8`、回绕 oldest |
-| 借阅台账 | `main.cpp` | 双 `map` + `long long`，失败即 `rejected` |
-| 多文件统计工具 | `CMakeLists.txt`、`format.cpp` | CMake 入口 + 格式化签名修正 |
+| 读数统计 | `main.cpp` | 一次扫描求 count/sum/min/max |                                                                   
+| 设备巡检记录 | `main.cpp` | 结构体聚合 + 类型索引 + 最忙设备 |                                                                
+| 固定容量读数窗口 | `main.cpp` | 环形窗口 `read % 8`、回绕 oldest |                                                                         
+| 借阅台账 | `main.cpp` | 双 `map` + `long long`，失败即 `rejected` |                                                           
+| 多文件统计工具 | `CMakeLists.txt`、`format.cpp` | CMake 入口 + 格式化签名修正 |                                                      
 | 四线程快速排序观察 | `report.md` | 五数取中 + 三路划分 + 名额 CAS |
 
 ### 4.1 读数统计
